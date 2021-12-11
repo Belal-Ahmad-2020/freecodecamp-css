@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied Accessibility</title>
     <style>
-    div{
-    border-radius: 20px;
-    width: 70%;
-    height: 400px;
-    margin:  50 auto;
-    background: repeating-linear-gradient(
-      45deg,
-      yellow 0px,
-      yellow 40px,
-      black 40px,
-      black 80px       
+  .ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
     );
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+  }
+  #ball2 {
+    left: 65%;
+    transform: scale(1.5);
   }
     
     </style>
@@ -25,6 +31,7 @@
 </head>
 <body>
   
-  <div></div>
+  <div class="ball" id= "ball1"></div>
+  <div class="ball" id= "ball2"></div>
 </body>
 </html>
