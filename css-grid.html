@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
-
     <style>
-        .d1{background:LightSkyBlue;}
-        .d2{background:LightSalmon;}
-        .d3{background:PaleTurquoise;}
-        .d4{background:LightPink;}
-        .d5{background:PaleGreen;}
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+      
+        .item5 {
+          background: PaleGreen;
+          /* Only change code below this line */
+          grid-column: 2/4;
+      
+          /* Only change code above this line */
+        }
       
         .container {
           font-size: 40px;
@@ -21,10 +27,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr;
-          /* Only change code below this line */
-      
-          grid-gap: 10px 20px;
-          /* Only change code above this line */
+          grid-gap: 10px;
         }
       </style>
 
